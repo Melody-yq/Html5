@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>实现不同大小的图片的水平居中</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			dl{width: 199px;height: 236px;border-right: 1px solid #ff0;
+			border-bottom: 1px solid #f00;}
+			dt img{width: 160px;height: 140px;vertical-align: middle;}
+			dt{width: 199px;height: 164px;border-bottom: 1px solid #f00;text-align: center;}
+		    dt span{width: 0;height: 100%;display: inline-block;vertical-align: middle;}
+		</style>
+	</head>
+	<body>
+		<dl>
+			<dt><img src="images/photo1.png"><span></span></dt>
+			<dd>小狗1</dd>
+			<dd>123</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/photo2.png"><span></span></dt>
+			<dd>小狗2</dd>
+			<dd>456</dd>
+		</dl>
+	</body>
+</html>

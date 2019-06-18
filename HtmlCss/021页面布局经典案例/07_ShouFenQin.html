@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>垂直手风琴效果</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box {
+				width: 500px;
+				height: 500px;
+				margin: 50px;
+			}
+			
+			.box .content a {
+				display: block;
+				height: 35px;
+				background: linear-gradient(#cecece, #8f8f8f);
+				border-radius: 5px;
+				text-decoration: none;
+				padding-left: 12px;
+				color: #424242;
+				line-height: 35px;
+			}
+			
+			.box .content {
+				position: relative;
+			}
+			
+			.box .content span {
+				width: 0;
+				height: 0;
+				border-left: 5px rgb(0, 0, 0, 0) solid;
+				border-right: 5px transparent solid;
+				border-top: 5px white solid;
+				border-bottom: 5px rgb(0, 0, 0, 0) solid;
+				position: absolute;
+				top: 15px;
+				right: 15px;
+			}
+			
+			.box .content p {
+				height: 0;
+				overflow: auto;
+				padding-left: 10px;
+				margin: 5px 0;
+				transition: 0.5s;
+			}
+			
+			.box .content:target p {
+				height: 100px;
+			}
+			
+			.box .content a:hover,
+			.box .content:target a {
+				background: linear-gradient(#6bb2ff, #2288dd);
+				color: #fff;
+			}
+			
+			.box .content:target span {
+				border-top: 5px solid transparent;
+				border-left: 5px solid white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="content" id="list1">
+				<a href="#list1">Brand</a>
+				<span></span>
+				<!--用边框制作三角-->
+				<p>Also at the event, officials from China's National Cultural Heritage Administration and U.S. Federal Bureau of Investigation6 (FBI) signed and exchanged Certificate of Transfer, which formalizes the transfer of custody7 from the United States to China regarding these cultural relics and artifacts. Hu said that the repatriation is the fruit of the long-term cooperation between the United States and China, and will further enhance the trust and understanding between the two peoples, as the two nations celebrate the 40th anniversary of their bilateral9 diplomatic ties.
+				</p>
+			</div>
+			<div class="content" id="list2">
+				<a href="#list2">Brand</a>
+				<span></span>
+				<p>Also at the event, officials from China's National Cultural Heritage Administration and U.S. Federal Bureau of Investigation6 (FBI) signed and exchanged Certificate of Transfer, which formalizes the transfer of custody7 from the United States to China regarding these cultural relics and artifacts. Hu said that the repatriation is the fruit of the long-term cooperation between the United States and China, and will further enhance the trust and understanding between the two peoples, as the two nations celebrate the 40th anniversary of their bilateral9 diplomatic ties.
+				</p>
+			</div>
+			<div class="content" id="list3">
+				<a href="#list3">Brand</a>
+				<span></span>
+				<p>Also at the event, officials from China's National Cultural Heritage Administration and U.S. Federal Bureau of Investigation6 (FBI) signed and exchanged Certificate of Transfer, which formalizes the transfer of custody7 from the United States to China regarding these cultural relics and artifacts. Hu said that the repatriation is the fruit of the long-term cooperation between the United States and China, and will further enhance the trust and understanding between the two peoples, as the two nations celebrate the 40th anniversary of their bilateral9 diplomatic ties.
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>

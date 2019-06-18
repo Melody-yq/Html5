@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>旋转立方体</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.box{width: 400px;height: 400px;border: 1px red solid;
+			perspective: 800px;perspective-origin: top left;
+			margin: 100px auto;
+			}
+			ul li{list-style: none;}
+			ul{width: 200px;height: 200px;margin: 100px;
+			position: relative;
+			transform-style: preserve-3d;
+			animation: move 1.5s infinite linear;
+			transform-origin: center center;
+			}
+			ul li{width: 200px;height: 200px;position: absolute;text-align: center;line-height: 200px;}
+			li:nth-child(1){background:#00f;opacity: 0.4;transform: translateY(-100px) rotateX(-90deg);}
+			li:nth-child(2){background:#f00;opacity: 0.4;transform: translateY(100px) rotateX(90deg);}
+			li:nth-child(3){background:#0f0;opacity: 0.4;transform: translateX(-100px) rotateY(-90deg);}
+			li:nth-child(4){background:#f0f;opacity: 0.4;transform: translateX(100px) rotateY(90deg);}
+			li:nth-child(5){background:#0ff;opacity: 0.4;transform: translateZ(100px);}
+			li:nth-child(6){background:#ff0;opacity: 0.4;transform: translateZ(-100px) rotate(360deg);}
+		 @keyframes move{
+		 	from{transform: rotateY(0deg);}
+		 	to{transform: rotateY(360deg);}
+		 }
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li>上</li>
+				<li>下</li>
+				<li>左</li>
+				<li>右</li>
+				<li>前</li>
+				<li>后</li>
+			</ul>
+		</div>
+	</body>
+</html>

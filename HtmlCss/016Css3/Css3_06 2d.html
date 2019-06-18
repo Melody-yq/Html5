@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box1,.box2,.box3,.box4,.box5{
+				width: 100px;
+				height: 100px;
+				background: red;
+				margin: 100px auto;
+				}
+			.box1:hover{
+				transform: rotate(300deg);
+			}
+			.box2:hover{
+				transform: scale(2)
+			}
+			.box3:hover{
+				transform: skew(30deg,30deg);
+				transition: all 2s;
+			}
+			.box4:hover{
+				transform-origin: left top;
+				transform: rotate(30deg);
+				transition: all 2s;
+			}
+			.box5:hover{
+			transition: all 2s;
+			transform: translateX(200px) rotate(30deg) scale(2,.5) skew(30deg,30deg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1">旋转</div> 
+		<div class="box2">缩放</div> 
+		<div class="box3">扭曲</div> 
+		<div class="box4">改中心点</div> 
+		<div class="box5">2D综合效果</div> 
+	</body>
+</html>

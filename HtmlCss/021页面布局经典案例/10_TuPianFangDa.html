@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图片放大效果</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.box{width: 620px;margin: 50px auto;}
+			.box h3{font-size: 17px;color: #a53333;text-align: center; border-bottom:1px dashed #CCCCCC;font-weight: 300;padding-bottom: 5px;}
+		    .box .pic{width:106px;border: 1px solid #bbbbbb;background:  #EEEEEE;float: left;margin: 3px;position: relative;}
+		    .box .pic img{width: 100px;height: 75px;border: 1px solid #CCCCCC;padding: 2px;background: #FFFFFF;display: block;}
+		    .list{margin-top: 10px;}
+		    .box .list .pic img:nth-child(2){width: 200px;height: 150px;position: absolute;z-index: 88;top: -35px;left: -45px;display: none;}
+		    .box .list .pic:hover img{display: block;border: black 1px solid;}
+		    .box p{text-align: center;font-size: 12px;color: #777777;}
+		    .box .list .clear{clear: both;}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h3>Hoverbox Image Gallery</h3>
+			<div class="list">
+			<div class="pic">
+				<!--不能用一张图片来进行放大缩小。因为没办法设置它的图片显示的顺序就会导致图片的一边被另一张图给覆盖-->
+				<img src="images/photo1.png" />
+				<img src="images/photo1.png" />
+			</div>
+			<div class="pic">
+				<img src="images/photo2.png" />
+				<img src="images/photo2.png" />
+			</div>
+			<div class="pic">
+				<img src="images/photo3.png" />
+				<img src="images/photo3.png" />
+			</div>
+			<div class="pic">
+				<img src="images/photo4.png" />
+				<img src="images/photo4.png" />
+			</div>
+			<div class="pic">
+				<img src="images/photo1.png" />
+				<img src="images/photo1.png" />
+			</div>
+			<div class="pic">
+				<img src="images/photo2.png" />
+				<img src="images/photo2.png" />
+			</div>
+			<div class="pic">
+				<img src="images/photo3.png" />
+				<img src="images/photo3.png" />
+			</div>
+			<div class="clear"></div>
+			</div>
+			<p>footer</p>
+		</div>
+		
+	</body>
+</html>

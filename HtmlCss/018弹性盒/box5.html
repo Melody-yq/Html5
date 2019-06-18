@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>经典页面布局</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			html,body{height: 100%;}
+			body{display: flex;flex-direction: column;}
+			.header{height: 50px; background: #666;}
+			.main{background: #00FFFF;flex: 1;display: flex;}
+			.footer{height: 50px;background: #666;}
+			.left{width: 200px;background: #00FFFF;}
+			.center{background: #ADFF2F;flex: 1;}
+			.right{width: 200px;background:#00FFFF;}
+		</style>
+	</head>
+	<body>
+	  <div class="header">
+	  	<ul>
+	  		<li></li>
+	  		<li></li>
+	  		<li></li>
+	  		<li></li>
+	  		<li></li>
+	  	</ul>
+	  </div>
+	  <div class="main">
+	  	<div class="left">left</div>
+	  	<div class="center">center</div>
+	  	<div class="right">right</div>
+	  </div>
+	  <div class="footer">footer</div>
+	</body>
+</html>

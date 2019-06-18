@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			ul li{
+				list-style: none;
+			}
+		    .nav{
+				width: 252px;
+				height: 23px;
+				background: #eee;
+				overflow: hidden;
+			}
+			.nav li{
+				float: left;
+			}
+			.nav li a{
+				display: block;
+				width: 63px;
+				height: 23px;
+				text-align: center;
+				color: #333;
+				height: 23px;
+				text-decoration: none;
+				background: url(images/sprites.png);
+			}
+			#p2 a{
+				background-position: -63px 0;
+			}
+			#p2 a{
+				background-position: -126px 0;
+			}
+			#p2 a{
+				background-position: -189px 0;
+			}
+			#p1 a:hover{
+				background-position: 0 -23px;
+			}
+			#p2 a:hover{
+				background-position: 63px -23px;
+			}
+			#p3 a:hover{
+				background-position: -126px -23px;
+			}
+			#p4 a:hover{
+				background-position: -189px -23px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li id="p1"><a href="#">首页</a></li>
+			<li id="p2"><a href="#">新闻</a></li>
+			<li id="p3"><a href="#">娱乐</a></li>
+			<li id="p4"><a href="#">体育</a></li>
+		</ul>
+	</body>
+</html>

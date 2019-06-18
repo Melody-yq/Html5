@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>实现网页弹窗水平垂直居中几种方法</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.box{width:300PX;height: 300PX;border: 1PX solid red;}
+			/*.box*/ 
+			/*第一种方法：定位加margin*/
+			/*p{width: 200px;height: 200px;background: green;position: fixed;
+			top: 50%;left: 50%;margin-top: -100px;margin-left: -100px;}*/
+			
+			/*第二种方法：transform*/
+			/*p{width: 200px;height: 200px;background: green;position: fixed;
+			top: 50%;left: 50%;transform: translate(-100px,-100px);}*/
+		
+		    /* 第三种方法：技巧方法 比较灵活*/
+		   /*p{width: 200px;height: 200px;background: green;position: fixed;
+			top: 0;left: 0;right: 0;bottom: 0;margin: auto;}*/
+		
+		    /*第四种方法：弹性盒:但是不会相对于浏览器固定，而且限制了浏览器宽高100%*/
+		   html,body{height: 100%;width: 100%;}
+		   body{height:100%;display: flex;justify-content: center;align-items: center;}
+		   p{width: 200px;height: 200px;background: green;}
+		</style>
+	</head>
+	<body>
+		<!--<div class="box">-->
+			<p></p>
+		<!--</div>-->
+	</body>
+</html>

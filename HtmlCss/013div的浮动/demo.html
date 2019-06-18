@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}	
+		.content{
+			width: 300px;height: 500px;
+			border-width: 1px;
+			margin: auto;
+			border: 1px solid;
+			list-style: none;
+			
+		}
+		.msg{
+			clear: both;/* 消除上一条消息左右浮动的影响*/
+		}
+		.msg.left{
+			background: gainsboro;
+			float: left;
+		}
+		.msg.right{
+			background: greenyellow;
+			float: right;
+		}
+		
+		</style>
+	</head>
+	<body>
+			<ul class="content">
+				<li class="msg left">在吗</li>
+				<li class="msg right">在的</li>
+				<li class="msg left">干嘛呢</li>
+				<li class="msg right">吃饭</li>
+				<li class="msg left">好的</li>
+			</ul>
+	</body>
+</html>

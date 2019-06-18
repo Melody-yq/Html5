@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;padding: 0;
+			}
+			#header{
+				background:#E83828;
+				height: 50px;
+			}
+			#header .head{
+				background:gray;
+				width:860px; height: 50px;
+				margin: auto;
+				
+				
+			}
+			#header .head li{
+				text-align: center;
+				float: left;
+				width: 120px;
+				height: 50px;
+				display: block;
+				list-style: none;
+				line-height: 50px;
+				color: #F7F6F6;
+				border-right: 1px #F7F6F6 solid;
+				
+			}
+			#header .head li:hover{
+				background: red;
+			}
+			#header .head li.last{
+				font-weight:bold;
+				border-right: none;
+			}
+			#banner{
+				width:1900px;
+				height: 400px;
+			}
+			#category{
+				width: 1005px;height: 200px;
+				margin: auto;
+				background: red;
+			}
+			#category .item{
+				width:125px ;height:165px ;
+				padding-left: 25px;
+				padding-right:25px ;
+				padding-bottom: 25px;
+				padding-top: 10px;
+				border-right: 1px dashed black;
+				float: left;
+			}
+			#category .item.first{
+				padding-left: 0;
+			}
+			#category .item.last{
+				padding-right:0 ;
+				border: 0;
+			}
+			#case{
+				width: 1900px;
+				height: 490px;
+				background: #eeeeee;
+			}
+			#case .title-case{
+				width: 1005px;
+				margin: auto;
+				padding-top: 20px;
+				padding-bottom: 10px;
+				font-size: 45px;
+				
+			}
+			#case .item-wrapper{
+				width: 1005px;
+				margin: auto;
+				overflow: auto;
+			}
+			#case .item{
+				width: 320px;
+				height: 330px;
+				background: greenyellow;
+				float: left;
+			}
+			#case .item-wrapper.mg{
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			#case p{
+				width: 1005px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 15px;
+				font-size:30px ;
+				height: 40px; line-height: 40px;
+				text-align: center;
+				color: dimgray;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<ul class="head">
+				<li class="first">BEANCMS</li>
+				<li>首页</li>
+				<li>关于我们</li>
+				<li>我们的服务</li>
+				<li>客户案例</li>
+				<li>联系我们</li>
+				<li class="last">0898-6608888</li>
+			</ul>
+		</div>
+		<div id="banner" >	
+			<img src="images/1.png" style="width:1900px;height: 400px;"/>
+		</div>
+		<div id="category">
+			<div class="item first"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item last"></div>
+		</div>
+		<div id="case">
+			<div class="title-case">
+				Case案例
+			</div>
+			<div class="item-wrapper">
+				<div class="item"></div>
+				<div class="item mg"></div>
+				<div class="item"></div>
+			</div>
+			<p>查看更多</p>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

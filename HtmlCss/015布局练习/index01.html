@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;padding: 0;
+			}
+			ul li{
+				list-style: none;
+			}
+			.header{
+				height: 50px;
+				background: black;
+				}
+			.header ul{
+				width: 960px;
+				margin: auto;
+			    overflow: hidden; /*解决li添加float时的高度塌陷问题*/
+			}
+			.header ul li{
+				float: left;
+				border-right: 1px #eee solid;
+			}
+			.header ul li a{
+				display: block;
+				width: 120px;
+				height: 50px;
+				color: #fff;
+				text-decoration: none;
+				text-align: center;
+				line-height: 50px;
+			}
+			.header ul li a:hover{
+				background: #f00;
+			}
+			.header ul li.last{
+				border-right: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+					<li class="last"><a href="#">首页</a></li>
+				</ul>
+		</div>
+	</body>
+</html>

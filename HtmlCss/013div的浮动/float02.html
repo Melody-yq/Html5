@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.a{
+				width: 200px;
+				background: red;
+			}
+			.b{
+				width: 700px;
+				background: green;
+			}
+			.c{
+				width: 300px;
+				background: purple;
+			}
+			.a,.b,.c{
+				height: 200px;
+				float: left;
+				}
+			.hh{
+				width: 100%;
+				height: 500px;
+				background: black;	
+				}
+				.A{
+					overflow: auto;
+				}
+		</style>
+	</head>
+	<body>
+		<!--加A的div消除浮动的影响-->
+		<div class="A">
+		<div class="a"></div>
+		<div class="b"></div>
+		<div class="c"></div>
+		</div>
+		<div class="hh"></div>
+	</body>
+</html>
